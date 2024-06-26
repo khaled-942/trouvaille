@@ -21,4 +21,6 @@ export class AddImagesComponent {
     console.log(this.myImages);
     
   }
+
+  // try to link with firebase
 }
