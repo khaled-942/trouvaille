@@ -1,0 +1,8 @@
+<div class="container min-h-full min-w-full p-3 text-dark">
+    @if (weatherDataStatus) {
+        <p>name: {{weatherData?.name}}</p>
+        <p>description: {{weatherData?.weather?.[0]?.description}}</p>
+        <p>Temp: {{weatherData?.main?.temp}}</p>
+    }
+    <button type="button" pButton icon="pi pi-times" class="p-button-danger" (click)="hideLandMark()"></button>
+</div>

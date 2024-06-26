@@ -1,0 +1,17 @@
+<app-nav-bar></app-nav-bar>
+<div class="container min-h-full min-w-full flex gap-3">
+  <div
+    class="flex-1 align-items-center justify-content-center flex flex-column m-5"
+  >
+    <app-home-page-text></app-home-page-text>
+    <app-search-on-the-map></app-search-on-the-map>
+  </div>
+  @if(landMarksStatus){
+  <div
+    class="landMarks flex-1 align-items-center justify-content-center m-5"
+  >
+    <app-country-landmarks></app-country-landmarks>
+  </div>
+  }
+</div>
+<app-footer></app-footer>

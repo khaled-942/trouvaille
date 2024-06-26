@@ -1,0 +1,8 @@
+<p>add-images works!</p>
+<input type="file" class="myFile" multiple (change)="onSelect($event)" />
+<label
+  >@for (file of myImages; track file) {
+  <span class="name">{{ file.name }}</span>
+  }</label
+>
+<button class="uploadBtn" (click)="Upload()">Upload</button>

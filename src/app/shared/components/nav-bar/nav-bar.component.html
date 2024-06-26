@@ -1,0 +1,15 @@
+<nav class="p-2 text-white absolute">
+  <ul class="flex gap-3 align-items-center">
+    <li>Trouvaille</li>
+    <li>Events</li>
+    @if (logInStatus) {
+    <p-avatar
+      image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+      styleClass="mr-2 flex pointer"
+      shape="circle"
+    />
+    } @else {
+    <li>LogIn</li>
+    }
+  </ul>
+</nav>

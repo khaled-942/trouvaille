@@ -1,0 +1,11 @@
+.orangeColor{
+    color: #ea580c;
+    &::selection{
+        color: white !important;
+    }
+}
+.text-white{
+    &::selection{
+        color: #ea580c !important;
+    }
+}

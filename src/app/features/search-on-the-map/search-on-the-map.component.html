@@ -1,0 +1,19 @@
+<div class="card flex flex-column md:flex-row gap-3">
+    <form [formGroup]="searchForm">
+        <p-inputGroup>
+          <input
+            type="text"
+            pInputText
+            placeholder="Country Name"
+            formControlName="text"
+          />
+          <button
+            type="button"
+            pButton
+            icon="pi pi-search"
+            class="p-button-warning"
+            (click)="showPanel()"
+          ></button>
+        </p-inputGroup>
+    </form>
+</div>
